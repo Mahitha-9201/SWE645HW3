@@ -29,7 +29,7 @@ pipeline {
                 // Set the correct context for your Kubernetes cluster
                 sh 'kubectl config use-context swe645hw3'
                 // Update the image in your deployment
-                sh 'kubectl set image deployment/swe645deployment swe645deployment=mahitha9201/studentsurvey:latest -n default'
+                sh 'kubectl set image deployment/swe645deployment container-0=mahitha9201/studentsurvey:latest -n default'
                 // Restart the deployment to apply the changes
                 sh 'kubectl rollout restart deploy swe645deployment -n default'
             }
