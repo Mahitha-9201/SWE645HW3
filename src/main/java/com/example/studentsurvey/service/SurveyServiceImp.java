@@ -30,7 +30,7 @@ public class SurveyServiceImp implements SurveyService {
 
     public StudentSurvey updateSurvey(int id, StudentSurvey studentSurvey) {
         StudentSurvey existingSurvey = (StudentSurvey)this.studentRep.findById(id).orElseThrow(() -> {
-            return new RuntimeException("Survey not found");
+            return new RuntimeException("SURVEY NOT FOUND");
         });
         existingSurvey.setUserName(studentSurvey.getUserName());
         existingSurvey.setStreetAddress(studentSurvey.getStreetAddress());
