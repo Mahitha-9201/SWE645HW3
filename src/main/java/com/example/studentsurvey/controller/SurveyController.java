@@ -33,7 +33,7 @@ public class SurveyController {
     public ResponseEntity<?> add(@RequestBody StudentSurvey studentSurvey) {
         try {
             this.surveyService.saveSurvey(studentSurvey);
-            return ResponseEntity.status(HttpStatus.CREATED).body(Map.of("message", "Survey Added Successfully"));
+            return ResponseEntity.status(HttpStatus.CREATED).body(Map.of("message", "SURVEY ADDED SUCCESSFULLY!"));
         } catch (Exception var3) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of("error", "Error adding survey"));
         }
