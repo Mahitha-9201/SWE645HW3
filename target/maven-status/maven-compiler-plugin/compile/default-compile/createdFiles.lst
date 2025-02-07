@@ -1,6 +1,0 @@
-com/example/studentsurvey/service/SurveyService.class
-com/example/studentsurvey/StudentsurveyApplication.class
-com/example/studentsurvey/controller/SurveyController.class
-com/example/studentsurvey/model/StudentSurvey.class
-com/example/studentsurvey/repository/studentRepository.class
-com/example/studentsurvey/service/SurveyServiceImp.class
